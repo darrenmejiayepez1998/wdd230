@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Default font for the enture page */
+    text-align: center; /* Centers the text in body */
+  }
+
+  nav ul {
+    list-style: none; /* Removes bullets from body */
+  }
+
+  body ul {
+    list-style: none; /* Removes bullets from body */
+  }
+  
+  header {
+    background: rgb(59, 76, 125);
+    padding: 2rem;
+    grid-column: 1 / 3;
+    font-family: monospace, 'Arial', 'Times';
+    color: white;
+  }
+  
+  nav {
+    grid-column: 1 / 3;
+    background-color: rgb(249, 246, 246);
+    padding: 1rem;
+    font-family: monospace, 'Georgia', 'Arial'; 
+    text-align: center;
+    list-style: none;
+  }
+  
+  main {
+    background: rgb(255, 255, 255);
+    height: 100%;
+    padding: 1rem;
+    font-family: monospace, 'Georgia', 'Arial';
+  }
+  
+  aside {
+    background: yellow;
+    grid-column: 2 / 3;
+    padding: 1rem;
+  }
+  
+  footer {
+    background: rgb(59, 76, 125);
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 3;
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  footer img {
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    transform: translateX(-50%);
+  }
+  
