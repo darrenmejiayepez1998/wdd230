@@ -9,4 +9,9 @@
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+    } 
 }
