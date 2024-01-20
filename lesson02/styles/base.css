@@ -25,7 +25,7 @@
 
   div {
     max-width: 767px;
-    max-height: auto;
+    height: auto;
     margin: 0.5rem;
     border: 1px solid #010101;
     padding: 0 1rem;
