@@ -61,6 +61,14 @@
     text-align: center;
     list-style: none;
   }
+
+  nav {
+    display: none;
+  }
+
+  nav.open {
+    display: flex;
+  }
   
   /* Found this solution by wathcing the grid colum video*/
   main {
@@ -76,6 +84,29 @@
   @media screen and (max-width: 767px) {
     main{
       grid-template-columns: 1fr;
+    }
+
+    #menu {
+      font-size: 1.5rem;
+      border: 0;
+      background: none;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      display: block;
+      cursor: pointer;
+      text-align: center;
+      box-sizing: border-box;
+      background-color: transparent;
+      border: none;
+    }
+
+    #menu::before {
+      content: "☰";
+    }
+
+    #menu.open::before {
+      content: "❎";
     }
   }
 
