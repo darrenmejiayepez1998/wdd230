@@ -1,0 +1,22 @@
+/*large screen media query */
+@media screen and (min-width: 720px) {
+  header {
+    background: rgb(59, 76, 125);
+    color: white;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+nav {
+    display: block;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+#menu{
+    display: none;
+} 
+  }
