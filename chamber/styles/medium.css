@@ -1,0 +1,22 @@
+/* medium screen media query */
+@media screen and (min-width: 500px) {
+    header {
+        background: orange;
+        color: white;
+  }
+  main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+  }
+  nav {
+      display: block;
+  }
+  nav ul{
+      display: flex;
+      justify-content: space-around;
+  }
+  #menu{
+      display: none;
+  } 
+    }
