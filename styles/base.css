@@ -16,6 +16,24 @@ header img {
   margin-right: 500px;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero-label {
+  position: absolute;
+  top: 20;
+  left: 20;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+h2{
+  margin-top: 1000px;
+  margin-left: 20px;
+}
+
 body {
   /* display: grid; */
   /* height: 100vh;  */
@@ -38,7 +56,6 @@ body ul {
   padding: 1rem;
   font-family: monospace, 'Georgia', 'Arial';
 }
-
 
 .open {
   display: block;
