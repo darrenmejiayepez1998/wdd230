@@ -40,7 +40,11 @@
     </nav>
     <main>
         <div class="hero-container">
-            <img src="images/orem-state-street-orem-ut_orig.jpg" alt="hero image" class="hero-image">
+            <picture>
+                <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
+                <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1000px)">
+                <img src="images/wdd230-org-large.webp" alt="hero image" class="hero-image" style="width: 1280; height: 753;">
+            </picture>
             <div class="hero-text">
                 <h2>Join now!</h2>
             </div>
@@ -52,7 +56,9 @@
         <section class="weather">
             <h4>Weather</h4>
             <!-- Information placeholders about the weather, number of visits, etc. -->
-            <p>Weather: [Weather Placeholder]</p>
+            <span id="temperature">25</span> °F
+            <span id="windSpeed">5</span> mph
+            <span id="windChill"></span>
         </section>
         <section>
             <div class="spotlight">
@@ -77,7 +83,7 @@
     <footer>
         <p>
             &copy; <span id="currentYear">[Year]</span> Project for WDD230 by Darren Adrian Mejia Yepez UT, United States
-            <img src="images/usa-flag.jpg" alt ="USA flag">
+            <img src="images/usa-flag.webp" alt ="USA flag">
         </p> 
         <p id="lastModified">Last Modified: </p>
    </footer>
@@ -85,5 +91,6 @@
    <script src="scripts/getdates.js"></script>
    <script src="scripts/hamburger-menu.js"></script>
    <script src="scripts/darkmode.js"></script>
+   <script src="scripts/windchill.js"></script>
 </body>
 </html>
