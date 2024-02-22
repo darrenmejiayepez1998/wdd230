@@ -1,0 +1,31 @@
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 600px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 15s forwards;
+}
+
+/* Fadein defined */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
