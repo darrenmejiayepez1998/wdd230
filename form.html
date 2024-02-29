@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="description" content="This will be the course assignment portal for the projects on the WDD230 course I am taking." >
+    <link rel="icon" href="icon/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <img src="images/profile-mainpage.webp" alt="My Profile Picture">
+        <h1>Darren Adrian Mejia Yepez</h1>
+   </header>
+   <button id="menu"></button>
+   <nav>
+       <ul>
+            <li><a href ="https://darrenmejiayepez1998.github.io/wdd230/" target="_blank">Home</a></li>
+            <li> <a href="lesson03/chamber-site-plan.html" target="_blank">Chamber Site Plan</a></li>
+            <li><a href="chamber/index.html" target="_blank">Chamber Home Page</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/11?lang=eng" target="_blank">Favorite Scripture</a></li>    
+       </ul> 
+   </nav> 
+   <main>
+        <h2>User Information Example</h2>
+        <form method="get" action="form.html" class="wf1">
+            <fieldset>
+                <legend>User Sign Up Information</legend>
+                <label>User Name*<input type="text" name="uname" id="userName" placeholder="Username" required></label>
+                <label>Password*<input type="password" name="password" id="password" placeholder="password" pattern="^[A-Za-z0-9]{8,}$"></label>
+                <label>Confirm Password*<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Re-type password" required pattern="^[A-Za-z0-9]{8,}$" oninput="checkPasswordMatch()"></label>
+                <p id="passwordMatchMessage"></p>
+
+                <script>
+                    function checkPasswordMatch() {
+                        const password = document.getElementById('password').value;
+                        const confirmPassword = document.getElementById('confirmPassword').value;
+                        const message = document.getElementById('passwordMatchMessage');
+
+                        if (password == confirmPassword) {
+                            message.textContent = ''; //Clear message since passwords match
+                        } else {
+                            message.textContent = 'Passwords do not match. Please check for errors.';
+                            document.getElementById('password').value = '';
+                            document.getElementById('confirmPassword').value = ''; // these clear the form
+                            document.getElementById('password').focus(); // sets focus to password 
+                        }
+                    }
+                </script>
+
+                <label>Email*
+                    <input type="email" id="email" placeholder="Your byui email address" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="A valid BYU Idaho email address (I.E. darrenmejiabyui.edu)">
+                </label>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        // Function to handle form submission
+                        function handleSubmit(event) {
+                            // Prevent default form submission
+                            event.preventDefault();
+
+                            // Access form elements
+                            let formt = event.target;
+                            let formData = new FormData(formt);
+
+                            // Display form element values
+                            for (let pair of formData.entries()) {
+                                console.log(pair[0] + ": " + pair[1]);
+                            }
+                        }
+
+                        const form = document.querySelector("form");
+                        form.addEventListener("submit", handleSubmit);
+                    });
+                </script>
+
+                <label for="r">Rate website from 1-10</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <div class="ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
+                </div>
+
+                <script>
+                    const rangevalue = document.getElementById("rangevalue");
+                    const range = document.getElementById("r")
+    
+                    range.addEventListener('change', displayRatingValue)
+                    range.addEventListener('input',displayRatingValue)
+    
+                    function displayRatingValue() {
+                        rangevalue.innerHTML = range.value;
+                    }
+                </script>
+            </fieldset>
+
+            <input type="submit" value="Create your Account">    
+        </form>
+   </main>
+   <footer>
+    <p>
+        &copy; <span id="currentYear">[Year]</span> Darren Adrian Mejia Yepez UT, United States
+        <img src="images/usa-flag.webp" alt ="USA flag">
+    </p> 
+    <p id="lastModified">Last Modified: </p>
+</footer>
+
+<script src="scripts/getdates.js"></script>
+<script src="scripts/hamburger-menu.js"></script>
+</body>
+</html>
