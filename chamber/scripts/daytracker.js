@@ -1,3 +1,7 @@
+// Timestamp when the form.html is loaded
+const timestampInput = document.getElementById("timestamp");
+timestampInput.value = Date.now();
+
 document.addEventListener("DOMContentLoaded", function () {
     // Function to get latest visit from local storage
     function getLatestVisitDate() {
