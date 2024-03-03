@@ -30,4 +30,39 @@
     #menu{
         display: none;
     } 
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    
+      .sidebar { 
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+    
+      .sidebar li {
+        margin-bottom: 10px;
+      }
+
+    .container .sidebar {
+        grid-column: 1/2;
+    }  
+
+    .container .maincontent {
+        grid-column: 2/3;
+    }
+
+    .lazy-load:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }

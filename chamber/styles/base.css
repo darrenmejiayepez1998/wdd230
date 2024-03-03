@@ -97,11 +97,7 @@
   } 
 
   body {
-    /* display: grid; */
-    /* height: 100vh;  */
-    /* grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto 1fr auto; */
-    font-family: Georgia, 'Times New Roman', Times, serif; /* Default font for the enture page */
+    font-family: 'Signika Negative', sans-serif; /* Default font for the enture page */
     text-align: center; /* Centers the text in body */
   }
   
@@ -119,41 +115,7 @@
     background-color: #000;
     color: #fff;
   }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .sidebar { 
-    display: flex;
-    flex-direction: column;
-    background-color: #f1f1f1;
-    padding: 20px;
-  }
-
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .sidebar li {
-    margin-bottom: 10px;
-  }
   
-   /* Found this solution by wathcing the grid colum video*/
-  /* main {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    height: 100%;
-    padding: 1rem;
-    font-family: 'Signika Negative', sans-serif;
-  } */
-
 .main-content {
   padding: 20px;
 }

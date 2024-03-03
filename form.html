@@ -33,22 +33,29 @@
                 <legend>User Sign Up Information</legend>
                 <label>User Name*<input type="text" name="uname" id="userName" placeholder="Username" required></label>
                 <label>Password*<input type="password" name="password" id="password" placeholder="password" pattern="^[A-Za-z0-9]{8,}$"></label>
-                <label>Confirm Password*<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Re-type password" required pattern="^[A-Za-z0-9]{8,}$" oninput="checkPasswordMatch()"></label>
+                <label>Confirm Password*<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Re-type password" required oninput="checkPasswordMatch()"></label>
                 <p id="passwordMatchMessage"></p>
 
                 <script>
-                    function checkPasswordMatch() {
-                        const password = document.getElementById('password').value;
-                        const confirmPassword = document.getElementById('confirmPassword').value;
-                        const message = document.getElementById('passwordMatchMessage');
+                    
+                    const password = document.getElementById('password');
+                    const confirmPassword = document.getElementById('confirmPassword');
+                    const message = document.getElementById('passwordMatchMessage');
 
-                        if (password == confirmPassword) {
-                            message.textContent = ''; //Clear message since passwords match
+                    confirmPassword.addEventListener("focusout", checkPasswordMatch);
+
+                    function checkPasswordMatch(){
+
+                        if (password !== confirmPassword) {
+                            message.textContent = "❗Passwords DO NOT MATCH!"; //when they dont match
+                            message.style.visibility = "show";
+                            confirmPassword.style.backgroundColor = "#fff0f3";
+                            confirmPassword.value = "";
+                            confirmPassword.focus();
                         } else {
-                            message.textContent = 'Passwords do not match. Please check for errors.';
-                            document.getElementById('password').value = '';
-                            document.getElementById('confirmPassword').value = ''; // these clear the form
-                            document.getElementById('password').focus(); // sets focus to password 
+                            message.style.display = "none";
+                            confirmPassword.style.backgroundColor = "#fff";
+                            confirmPassword.style.color = "#000";
                         }
                     }
                 </script>
