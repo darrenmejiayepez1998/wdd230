@@ -1,0 +1,19 @@
+{
+    "wardInformation": {
+    "familyName": "Mejia",
+    "numberOfPeople": 2,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Darren Mejia",
+            "gender": "Male",
+            "birthdate": "1998-08-13"
+        },
+        {
+            "name":"Hypatia Mejia",
+            "gender": "Female",
+            "birthdate": "2000-05-05" 
+        }
+    ]
+    }
+}
