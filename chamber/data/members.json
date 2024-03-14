@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "DVD Game Exchange",
+            "address": "47 Center St, Orem, UT 84057",
+            "phone": "801-753-8305",
+            "website": "http://www.dvdgameexchange.com/",
+            "image": "images/dvd-logo.png",
+            "membership_level": "Gold",
+            "other_info": "Best place in Orem to trade in your old movies and games but also a great place for collectors to add to there trove of collectables!"
+        },
+        {
+            "name": "TRUreligion Pancake & Steakhouse",
+            "address": "360 S State St Suite 158, Orem, UT 84058",
+            "phone": "801-705-4425",
+            "website": "https://trureligionpancakeandsteakhouse.com/",
+            "image": "https://trureligionpancakeandsteakhouse.com/wp-content/uploads/2020/03/TRURELIGION-burgundy-with-extended-tagline2.png",
+            "membership_level": "Silver",
+            "other_info": "The best Pancakes in Orem! Vintage daytime diner with art deco artifacts, serving steak & eggs, pancake stacks & waffles."
+        },
+        {
+            "name": "EōS Fitness",
+            "address": "52 E University Pkwy, Orem, UT 84058",
+            "phone": "385-349-5842",
+            "website": "https://eosfitness.com/location/orem-e-university-pkwy-main-st-gym/",
+            "image": "https://eosfitness.com/wp-content/uploads/2018/10/logo-eos-fitness-white.svg",
+            "membership_level": "Bronze",
+            "other_info": " EōS is a place you belong. You come here to move. To lift. To sweat. For you, every rep is a triumph over limitation."
+        },
+        {
+            "name": "University Place",
+            "address": "575 E University Pkwy, Orem, UT 84097",
+            "phone": "801-224-0694",
+            "website": "https://www.universityplaceorem.com/",
+            "image": "https://www.universityplaceorem.com/wp-content/themes/up/images/logo.png",
+            "membership_level": "Gold",
+            "other_info": "University Place, previously known as University Mall, is a single-story shopping mall located in Orem, Utah, United States. It currently has three anchor stores: Dillard's, RC Willey, and Al's Sporting Goods. The mall is owned and managed by Woodbury Corporation."
+        },
+        {
+            "name": "El Mexicano Market",
+            "address": "560 N State St, Orem, UT 84057",
+            "phone": "801-765-0400",
+            "website": "https://www.facebook.com/ElMexicanoUT/about/?ref=page_internal&mt_nav=1&paipv=0&eav=Afa0piaAR4WCNgy149UT0FqADa8J12MYseOe988LaYC_mGBYh07WIZl84aicJJwd43A",
+            "image": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/305032124_756040022405780_33485825294970967_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YY8xteoVXp4AX9B8-Bp&_nc_ht=scontent-den2-1.xx&oh=00_AfCm49U9tOjaQcGzxUHFSji57YX73mKHEqTUFRxTaGCnNg&oe=65F7547F",
+            "membership_level": "Silver",
+            "other_info": "Locally run Mexican Market where you can get any of your needs stright from Mexico."
+        },
+        {
+            "name": "Savers",
+            "address": "81 N State St, Orem, UT 84057",
+            "phone": "801-225-9445",
+            "website": "https://stores.savers.com/ut/orem/savers-thrift-store-1036.html",
+            "image": "https://images.ctfassets.net/312853a4ptgv/3tzjov9kuvhfbOBWLKtcYn/bd0595b2161ccd62b85435a27d287ecf/logo.svg",
+            "membership_level": "Bronze",
+            "other_info": "Thrift store chain offering secondhand clothing, footwear, furniture, books & household items."
+        },
+        {
+            "name": "Taco Bell",
+            "address": "195 W Center St, Orem, UT 84058",
+            "phone": "801-226-4268",
+            "website": "https://locations.tacobell.com/ut/orem/195-west-center-street.html?utm_source=yext&utm_campaign=googlelistings&utm_medium=referral&utm_term=030725&utm_content=website&y_source=1_NjE0NTQ5NS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+            "image": "https://locations.tacobell.com/permanent-b0b701/assets/images/TBUS_Logo.7bd20747.svg",
+            "membership_level": "Gold",
+            "other_info": "Taco Bell IP Holder, LLC, doing business as Taco Bell, is an American multinational chain of fast food."
+        }
+    ]
+}
