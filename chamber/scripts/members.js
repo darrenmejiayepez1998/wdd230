@@ -4,6 +4,8 @@ fetch("data/members.json")
 .then(response => response.json())
 .then(data => {
     data.companies.forEach(company => {
+
+        // These are for the html 
         const companyDiv = document.createElement("div");
         const nameElement = document.createElement("h2");
         const addressElement = document.createElement("p");
@@ -13,6 +15,8 @@ fetch("data/members.json")
         const levelElement = document.createElement("p");
         const otherInfoElement = document.createElement("p");
 
+
+        // this is information from the JSON file
         nameElement.textContent = company.name;
         addressElement.textContent = `Address: ${company.phone}`;
         phoneElement.textContent = `Phone: ${company.phone}`;
