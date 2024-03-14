@@ -114,7 +114,13 @@
             ]
         },
         {
-            "lesson":"010"
+            "lesson":"010",
+            "links":[
+                {
+                    "url":"lesson10/weather.html",
+                    "title": "Weather API Example"
+                }
+            ]
         }
     ]
 }
