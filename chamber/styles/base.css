@@ -168,9 +168,26 @@
     justify-content: space-around;
   }
   
-  
-  /* Some of the code on div and example 
-  image classes are from the codepen example in the activity */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member-card {
+    border: 1px solid #770d0d;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .list .member-card {
+    margin-bottom: 20px;
+  }
   
   footer {
     background: orange;
