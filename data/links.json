@@ -1,0 +1,120 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url":"lesson01/holygrail.html",
+                    "title":"Holy Grail Layout"
+                },
+                {
+                    "url":"lesson01/media-query.html",
+                    "title":"Media Queries"
+                }    
+            ]
+        },
+        {
+            "lesson":"02",
+            "links": [
+                {
+                    "url":"lesson02/design-principles.html",
+                    "title":"Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson":"03",
+            "links": [
+                {
+                    "url":"lesson03/chamber-site-plan.html",
+                    "title":"Chaber Site Plan"
+                },
+                {
+                    "url":"https://codepen.io/Darren-Adrian-Mejia-Yepez/pen/abMLEGg",
+                    "title":"CSS Pseudo elements"
+                },
+                {
+                    "url":"https://codepen.io/Darren-Adrian-Mejia-Yepez/pen/dyrVJaM",
+                    "title":"Hamburger Menu"
+                }
+            ]
+        },
+        {
+            "lesson":"04",
+            "links":[
+                {
+                    "url":"https://codepen.io/Darren-Adrian-Mejia-Yepez/pen/abMqKZP",
+                    "title":"Psuedo CSS border box example"
+                }
+            ]
+        },
+        {
+            "lesson":"05",
+            "links":[
+                {
+                    "url":"lesson05/bom.html",
+                    "title":"Book of Mormon Chapter"
+                },
+                {
+                    "url":"lesson05/images/landscape_70.webp",
+                    "title":"Webp landscape image"
+                }
+            ]
+        },
+        {
+            "lesson":"06",
+            "links":[
+                {
+                    "url":"lesson/responsive-images.html",
+                    "title":"Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson":"07",
+            "links":[
+                {
+                    "url":"lesson07/lazyload.html",
+                    "title":"Lazy Load Example"
+                },
+                {
+                    "url":"lesson07.2/bom.html",
+                    "title":"Book of mormon chapter with saved local data"
+                }
+            ]
+        },
+        {
+            "lesson":"08",
+            "links":[
+                {
+                    "url":"lesson08/tablebuild.html",
+                    "title":"Table build example"
+                },
+                {
+                    "url":"Form-start/index.html",
+                    "title":"Example Of HTML Form"
+                },
+                {
+                    "url":"form.html",
+                    "title":"User Form Fill Out Example"
+                }
+            ]
+        },
+        {
+            "lesson":"09",
+            "links":[
+                {
+                    "url":"lesson09/new-ward-members.json",
+                    "title":"JSON example file"
+                },
+                {
+                    "url":"lesson09/prophets.html",
+                    "title":"Fetch API example"
+                }
+            ]
+        },
+        {
+            "lesson":"010"
+        }
+    ]
+}
