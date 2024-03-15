@@ -1,7 +1,7 @@
 async function fetchWeatherData() {
     const apiKey = "cac9f7c8276d2ae47cd3f21893b9d470"
     const city = "Orem";
-    const url = `'https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
 
     fetch(url)
         .then((response) => response.json())
