@@ -43,30 +43,29 @@ fetch("data/members.json")
 });
 
 
-//function displayMembers(data) {
-    //membersContainer.innerHTML = '';
-    //data.companies.forEach(company => {
-    //    const card = document.createElement('div');
-      //  card.classList.add('member-card');
+function displayMembers(data) {
+    membersContainer.innerHTML = '';
+    data.companies.forEach(company => {
+        const card = document.createElement('div');
+        card.classList.add('member-card');
 
-       // const html = `
-    //        <h2>${company.name}</h2>
-     //       <p><strong>Address:</strong> ${company.address}</p>
-      //      <p><strong>Phone:</strong> ${company.phone}</p>
-      //      <p><strong>Website:</strong> <a href="${company.website}" target="_blank">${company.website}</a></p>
-       //     <img src="${company.image}" alt="${company.name} Logo">
-    //        <p><strong>Membership Level:</strong> ${company.membership_level}</p>
-      //      <p>${company.other_info}</p>
-      //  `;
-       // card.innerHTML = html;
-      //  membersContainer.appendChild(card);
-  //  });
-//}
+        const html = `
+            <h2>${company.name}</h2>
+            <p><strong>Address:</strong> ${company.address}</p>
+            <p><strong>Phone:</strong> ${company.phone}</p>
+            <p><strong>Website:</strong> <a href="${company.website}" target="_blank">${company.website}</a></p>
+            <img src="${company.image}" alt="${company.name} Logo">
+            <p><strong>Membership Level:</strong> ${company.membership_level}</p>
+            <p>${company.other_info}</p>`;
+        card.innerHTML = html;
+        membersContainer.appendChild(card);
+    });
+}
 
-//function toggleView() {
-    //membersContainer.classList.toggle('grid');
-    //membersContainer.classList.toggle('list');
-//}
+function toggleView() {
+    membersContainer.classList.toggle('grid');
+    membersContainer.classList.toggle('list');
+}
 
 // Assuming you have your JSON data stored in a variable named jsonData
 displayMembers(jsonData);
