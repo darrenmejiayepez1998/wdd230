@@ -42,25 +42,45 @@
        <form method="get" action="thankyou.html" class="wf1">
         <fieldset>
             <legend>Membership Sign UP</legend>
-            <label>First Name*<input type="text" name="fname" id="firstName" required></label>
-            <label>Last Name*<input type="text" name="lname" id="lastName" required></label>
-            <label>Title or Position (within your company)*<input type="text" name="position" id="position" required pattern="^[A-Za-z -]{7,}$"></label>
-            <label>Email*<input type="email" name="email" id="email" required placeholder="example@gmail.com"></label>
-            <label>Phone Number*<input type="tel" name="phone" id="phone" required placeholder="2558784556"></label>
-            <label>Buisness or Organization's name*<input type="text" name="business" id="business" required></label>
+            <label for="firstName">First Name*</label>
+            <input type="text" name="fname" id="firstName" required>
+
+            <label for="lastName">Last Name*</label>
+            <input type="text" name="lname" id="lastName" required>
+
+            <label for="position">Title or Position (within your company)*</label>
+            <input type="text" name="position" id="position" required pattern="^[A-Za-z -]{7,}$">
+
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" required placeholder="example@gmail.com">
+
+            <label for="phone">Phone Number*</label>
+            <input type="tel" name="phone" id="phone" required placeholder="2558784556">
+
+            <label for="business">Buisness or Organization's name*</label>
+            <input type="text" name="business" id="business" required>
         </fieldset>
 
         <fieldset>
             <legend>Membership Levels</legend>
-            <label>NP Membership for non profit organizations and there is no fee. <input type="radio" name="membershipType" value="NP Membership"></label>
-            <label>Bronze Membership <input type="radio" name="membershipType" value="bronze"></label>
-            <label>Silver Membership <input type="radio" name="membershipType" value="silver"></label>
-            <label>Gold Membership <input type="radio" name="membershipType" value="gold"></label>
-            <label>Description of Buisness or Organization <input type="text" name="description" id="description"></label>
+            <label for="membershipType">NP Membership for non profit organizations and there is no fee.</label> 
+            <input type="radio" name="membershipType" value="NP Membership">
+
+            <label for="membershipType">Bronze Membership</label> 
+            <input type="radio" name="membershipType" value="bronze">
+
+            <label for="membershipType">Silver Membership</label> 
+            <input type="radio" name="membershipType" value="silver">
+
+            <label for="membershipType">Gold Membership</label> 
+            <input type="radio" name="membershipType" value="gold">
+
+            <label for="description">Description of Buisness or Organization</label> 
+            <input type="text" name="description" id="description">
         </fieldset>
         <input type="hidden" name="timestamp" id="timestamp">
         
-        <input type="submit" value="Join Chamber">
+        <input type="submit" value="Join Chamber" class="join-chamber-button">
        </form>
     </main>
     <footer>

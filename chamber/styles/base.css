@@ -96,6 +96,59 @@ font-family: 'Pacifico', cursive;
    color: inherit;
  } 
 
+ form {
+  width: 30%;
+  margin: 0 auto;
+ }
+
+ form fieldset {
+  display: flex;
+  flex-direction: column;
+ }
+
+ form fieldset label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+ }
+
+ form fieldset label > span {
+  flex-basis: 150px;
+  flex-shrink: 0;
+  margin-right: 10px;
+ }
+
+ form fieldset input {
+  flex: 1;
+ }
+
+ form fieldset input[type="text"],
+ form fieldset input[type="email"],
+ form fieldset input[type="tel"],
+ form fieldset textarea{
+  padding: 8px;
+ }
+
+ form fieldset label input[type="radio"] {
+  margin-right: 5px;
+ }
+
+ .join-chamber-button {
+  color: black;
+  font-size: 1rem;
+  margin: 0;
+  border: 2px solid orange;
+  padding: 10px 20px;
+  background-color: transparent; 
+ }
+
+ .join-chamber-button:hover {
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+ }
+
  li{
   list-style: none;
   font-size: 2rem;
