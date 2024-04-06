@@ -33,14 +33,40 @@
    </nav>
 
    <main>
-       
+       <section id="contact-info">
+        <h2>Essential Contact Information</h2>
+        <li>Owner and Manager: Oscar Zaragoza</li>
+        <li>Phone number: 960-452-8821</li>
+       </section>
+
+       <section id="google-map">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1j9zukGd5gEaWKN9F5i2HnhmseQKuJSBN&ehbc=2E312F" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       </section>
+
+       <section id="contact-form">
+            <h2>Contact Form</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+       </section>
    </main>
 
    <footer>
         <p>&copy; 2024 Scoots - Motor Scooter Rentals by Darren Mejia Student project</p>
    </footer>
 
-   <script src="scripts/current-weather.js"></script>
-   <script src="scripts/rental-info.js"></script>
 </body>
 </html>
