@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <title>Scoots - Motor Scooter Rentals</title>
+</head>
+<body>
+   <!-- Closeable message for high temp -->
+   <div class="closeable-message">
+    Today's high temperature: <span id="temp-max"></span>
+    <button id="close-btn">Close</button>
+   </div> 
+
+   <header>
+        <h1>Welcome to Scoots!</h1>
+        <p>Rent a motor scooter to have the best experience of exploring Cozumel!</p>
+        <button id="reserve-btn">Reserve Now!</button>
+   </header>
+
+   <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html"></a>Rentals</li>
+            <li><a href="reservations.html"></a>Reservations</li>
+            <li><a href="contact.html"></a>Contact Us</li>
+        </ul>
+   </nav>
+
+   <main>
+
+       <section id="rental-services">
+            <h2>Rental Services and Agreement</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid driver's license is required at the time of rental.</li>
+                <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+       </section>
+
+       <section id="reservation-form">
+        <h2>Rental Reservation Form</h2>
+        <form id="reservation-form">
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="period">Period:</label>
+                <select id="period" name="period" required>
+                    <option value="half-day">Half Day (3 hours)</option>
+                    <option value="full-day">Full Day</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="rental-type">Rental Vehicle Type:</label>
+                <input type="text" id="rental-type" name="rental-type" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="state-country">Home State or Country:</label>
+                <input type="text" id="state-country" name="state-country" required>
+            </div>
+            <div class="form-group">
+                <label for="cruise-line">Cruise Line (if applicable):</label>
+                <input type="text" id="cruise-line" name="cruise-line">
+            </div>
+            <div class="form-group">
+                <label for="special-accommodations">Special Accommodations/Comments</label>
+                <textarea id="special-accommodations" name="special-accommodations"></textarea>
+            </div>
+            <button type="submit">Submit Reservation</button>
+        </form>
+       </section>
+   </main>
+
+   <footer>
+        <p>&copy; 2024 Scoots - Motor Scooter Rentals by Darren Mejia Student project</p>
+   </footer>
+
+   <script src="scripts/current-weather.js"></script>
+   <script src="scripts/rental-info.js"></script>
+</body>
+</html>
