@@ -1,0 +1,172 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+
+.original-surfer-regular {
+    font-family: "Original Surfer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body {
+    font-family: "Original Surfer", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #07a7b9;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+#reserve-bt {
+    background-color: #07a7b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Adds rounded corners */
+    cursor: pointer; /* Keeps pointer curson when hovered */
+}
+
+#reserve-btn:hover {
+    background-color: #00eaff; /* Changes color on hover */
+}
+
+nav ul {
+    list-style: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    transition: background-color 0.3s;  
+}
+
+nav ul li a {
+    color: #333333;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #00eaff;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #07a7b9;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Rental Summary Styles */
+#rental-list {
+    padding-left: 20px;
+}
+
+/* Weather Information Styles */
+#weather-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-day {
+    margin-bottom: 20px;
+}
+
+.forecast-day p {
+    margin-bottom: 5px;
+}
+
+.closeable-message {
+    background: #f0ad4e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#close-btn {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+}
+
+#rental-summary {
+    margin-top: 20px;
+}
+
+#rental-summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#rental-summary th, #rental-summary td {
+    border: 1px solid #03b6c6;
+    padding: 8px;
+    text-align: center;
+}
+
+#rental-summary tr:hover {
+    background-color: #f2f2f2;
+}
+
+#rental-summary td:first-child {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    #rental-summary td, #rental-summary th {
+        padding: 6px;
+    }
+}

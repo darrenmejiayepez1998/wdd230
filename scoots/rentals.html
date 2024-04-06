@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <title>Scoots - Motor Scooter Rentals</title>
+</head>
+<body>
+   <!-- Closeable message for high temp -->
+   <div class="closeable-message">
+    Today's high temperature: <span id="temp-max"></span>
+    <button id="close-btn">Close</button>
+   </div> 
+
+   <header>
+        <h1>Welcome to Scoots!</h1>
+        <p>Rent a motor scooter to have the best experience of exploring Cozumel!</p>
+        <button id="reserve-btn">Reserve Now!</button>
+   </header>
+
+   <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html"></a>Rentals</li>
+            <li><a href="#"></a>Reservations</li>
+            <li><a href="#"></a>Contact Us</li>
+        </ul>
+   </nav>
+
+   <main>
+        <h1>Rental Options and Prices</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th>Half Day Reservation</th>
+                    <th>Full day Reservation</th>
+                    <th>Half Day Walk-In</th>
+                    <th>Full Day Walk-In</th>
+                </tr>
+            </thead>
+            <tbody id="rental-table-body">
+                <!-- Rental info is added by the JavaScript-->
+            </tbody>
+        </table>
+   </main>
+
+   <footer>
+        <p>&copy; 2024 Scoots - Motor Scooter Rentals by Darren Mejia Student project</p>
+   </footer>
+
+   <script src="scripts/rental-data.js"></script>
+</body>
+</html>

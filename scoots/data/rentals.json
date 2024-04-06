@@ -1,0 +1,58 @@
+{
+    "rentals": [
+        {
+            "type": "Honda Metro Scooter",
+            "max_persons": 1,
+            "half_day_reservations": "$20",
+            "full_day_reservations": "$30",
+            "half_day_walk_in": "$25",
+            "full_day_walk_in": "$35",
+            "image": "images/honda-metro-small.webp"
+        },
+        {
+            "type": "Honda Dio Scooter",
+            "max_persons": 2,
+            "half_day_reservations": "$30",
+            "full_day_reservations": "$40",
+            "half_day_walk_in": "$35",
+            "full_day_walk_in": "$45",
+            "image": "images/honda-dio-small.webp"
+        },
+        {
+            "type": "Honda PCX150 Scooter",
+            "max_persons": 2,
+            "half_day_reservations": "$40",
+            "full_day_reservations": "$50",
+            "half_day_walk_in": "$45",
+            "full_day_walk_in": "$55",
+            "image": "images/honda-pcx150-small.webp"
+        },
+        {
+            "type": "Honda Pioneer ATV",
+            "max_persons": "4",
+            "half_day_reservations": "$50",
+            "full_day_reservations": "$70",
+            "half_day_walk_in": "$60",
+            "full_day_walk_in": "$80",
+            "image": "images/honda-pioneer-small.webp"
+        },
+        {
+            "type": "Jeep Wrangler - 4 door with a/c",
+            "max_persons": 5,
+            "half_day_reservations": "$70",
+            "full_day_reservations": "$100",
+            "half_day_walk_in": "$85",
+            "full_day_walk_in": "$125",
+            "image": "images/jeep-wrangler-four-doors-small.webp"
+        },
+        {
+            "type":"Jeep Wrangler - 2 door",
+            "max_persons": 4,
+            "half_day_reservations": "$60",
+            "full_day_reservations":"$85",
+            "half_day_walk_in": "$70",
+            "full_day_walk_in": "$90",
+            "image": "images/jeep-wrangler-two-door-small.webp"
+        }
+    ]
+}
